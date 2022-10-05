@@ -1,11 +1,11 @@
 ---
-- name: unarchive module demo
+- name: Unarchive module demo
   hosts: all
   become: false
   vars:
     myurl: "https://github.com/lucab85/ansible-pilot/archive/refs/heads/master.zip"
   tasks:
-    - name: extractor presents
+    - name: Extractor presents
       ansible.builtin.yum:
         name:
           - unzip
@@ -13,7 +13,7 @@
         state: present
       become: true
 
-    - name: extract archive
+    - name: Extract archive
       ansible.builtin.unarchive:
         src: "{{ myurl }}"
         dest: "/home/devops/"
