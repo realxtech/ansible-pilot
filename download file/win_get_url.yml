@@ -1,5 +1,5 @@
 ---
-- name: win_get_url module demo
+- name: Win_get_url module demo
   hosts: all
   become: false
   vars:
@@ -8,7 +8,7 @@
     mycrc_algorithm: "sha256"
     mydest: 'C:\Users\vagrant\Desktop\ansible-2.9.25.tar.gz'
   tasks:
-    - name: download file
+    - name: Download file
       ansible.windows.win_get_url:
         url: "{{ myurl }}"
         dest: "{{ mydest }}"
