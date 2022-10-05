@@ -1,5 +1,5 @@
 ---
-- name: check if the directory exists
+- name: Check if the directory exists
   hosts: all
   become: false
   vars:
