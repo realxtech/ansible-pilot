@@ -1,9 +1,9 @@
 ---
-- name: lineinfile module demo
+- name: Lineinfile module demo
   hosts: all
   become: true
   tasks:
-    - name: allow password authentication
+    - name: Allow password authentication
       ansible.builtin.lineinfile:
         state: present
         dest: /etc/ssh/sshd_config
