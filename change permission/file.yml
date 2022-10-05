@@ -1,11 +1,11 @@
 ---
-- name: file module demo
+- name: File module demo
   hosts: all
   vars:
     myfile: "/home/devops/test.txt"
   become: false
   tasks:
-    - name: check permission
+    - name: Check permission
       ansible.builtin.file:
         path: "{{ myfile }}"
         owner: "devops"
