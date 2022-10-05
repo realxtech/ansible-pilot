@@ -1,9 +1,9 @@
 ---
-- name: copy module demo
+- name: Copy module demo
   hosts: all
   become: false
   tasks:
-    - name: copy multiple file(s)
+    - name: Copy multiple file(s)
       ansible.builtin.copy:
         src: "{{ item }}"
         dest: "/home/devops/"

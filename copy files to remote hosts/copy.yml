@@ -1,9 +1,9 @@
 ---
-- name: copy module demo
+- name: Copy module demo
   hosts: all
   become: false
   tasks:
-    - name: copy report.txt
+    - name: Copy report.txt
       ansible.builtin.copy:
         src: report.txt
         dest: /home/devops/report.txt

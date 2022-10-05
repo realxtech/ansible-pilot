@@ -1,5 +1,5 @@
 ---
-- name: win_copy module demo
+- name: Win_copy module demo
   hosts: all
   become: false
   gather_facts: false
@@ -7,7 +7,7 @@
     source: "report.txt"
     destination: "Desktop/report.txt"
   tasks:
-    - name: copy report.txt
+    - name: Copy report.txt
       ansible.windows.win_copy:
         src: "{{ source }}"
         dest: "{{ destination }}"
