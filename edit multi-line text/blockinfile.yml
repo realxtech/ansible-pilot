@@ -1,5 +1,5 @@
 ---
-- name: blockinfile module demo
+- name: Blockinfile module demo
   hosts: all
   become: true
   tasks:
