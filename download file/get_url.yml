@@ -1,5 +1,5 @@
 ---
-- name: get_url module demo
+- name: Get_url module demo
   hosts: all
   become: false
   vars:
@@ -8,7 +8,7 @@
     mydest: "/home/devops"
   tasks:
 
-    - name: download file
+    - name: Download file
       ansible.builtin.get_url:
         url: "{{ myurl }}"
         dest: "{{ mydest }}"

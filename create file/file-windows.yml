@@ -1,5 +1,5 @@
 ---
-- name: win_file module demo
+- name: Win_file module demo
   hosts: all
   become: false
   gather_facts: false

@@ -1,10 +1,10 @@
 ---
-- name: copy module demo
+- name: Copy module demo
   hosts: all
   vars:
     myfile: "~/example.txt"
   tasks:
-    - name: create a simple text file
+    - name: Create a simple text file
       ansible.builtin.copy:
         dest: "{{ myfile }}"
         content: |
